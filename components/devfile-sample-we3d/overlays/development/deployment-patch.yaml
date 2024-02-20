@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-we3d
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0055-tenant/tkrw-pr712-0075-0055-app/devfile-sample-we3d@sha256:8cf2749a0cc1c22cc07b4c0ce4b6676e04ba1d4a4f3d21457a85f20e755acaa4
+        name: my-nodejs
+        resources: {}
+status: {}
